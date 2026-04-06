@@ -1,0 +1,286 @@
+/* ========== RESET ========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../baby/background.jpg) center/cover no-repeat;
+  color: #222;
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+}
+
+/* ========== MAIN CONTAINER ========== */
+.main-content-section {
+  width: 92%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  min-height: 100px;
+}
+
+/* ========== HEADER ========== */
+.header-nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  direction: ltr;
+}
+
+h1 {
+  font-family: "Lobster Two", cursive;
+  font-size: 2.8rem;
+  color: #5e0260;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  direction: ltr;
+}
+
+.image-header {
+  width: 50px;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-contact,
+.nav-one,
+.nav-two,
+.nav-three {
+  padding: 8px 16px;
+  background: #5e0260;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-contact:hover,
+.nav-one:hover,
+.nav-two:hover,
+.nav-three:hover {
+  background: #8b0a8f;
+  transform: translateY(-2px);
+}
+
+/* ========== HERO SECTION ========== */
+.first-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.identify-section {
+  flex: 1;
+  min-width: 280px;
+}
+
+.first-section h2 {
+  font-size: 2rem;
+  color: #a52373;
+  font-family: "Lobster Two", cursive;
+  margin-bottom: 10px;
+}
+
+.first-section h3 {
+  color: #00d9ff;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.first-section p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #f1f1f1;
+}
+
+.first-section ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.photo-section {
+  flex: 1;
+  text-align: center;
+}
+
+.photo-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========== SERVICES ========== */
+.second-section {
+  margin-bottom: 50px;
+}
+
+.second-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #00d9ff;
+  margin-bottom: 10px;
+}
+
+.paragraph-after-h2-section-two {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 30px;
+  color: #eee;
+}
+
+/* CARDS */
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.box-one,
+.box-two,
+.box-three {
+  padding: 20px;
+  border-radius: 20px;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.box-one::before,
+.box-two::before,
+.box-three::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.box-one *,
+.box-two *,
+.box-three * {
+  position: relative;
+  z-index: 2;
+}
+
+.box-one {
+  background-image: url(../baby/birthsupport.jpg);
+}
+.box-two {
+  background-image: url(../baby/babysmall.jpg);
+}
+.box-three {
+  background-image: url(../baby/mombirth.jpg);
+}
+
+.box-one:hover,
+.box-two:hover,
+.box-three:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.cards-section h3 {
+  color: #00eaff;
+  margin-bottom: 10px;
+}
+
+.cards-section p {
+  line-height: 1.6;
+}
+
+/* ========== ABOUT ========== */
+.third-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.third-section h2 {
+  color: #00d9ff;
+  margin-bottom: 15px;
+}
+
+.third-section p {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.7;
+  color: #eee;
+}
+
+/* ========== CONTACT ========== */
+.four-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.four-section h2 {
+  color: #00d9ff;
+  margin-bottom: 10px;
+}
+
+.instgram-link a {
+  color: #00eaff;
+  text-decoration: none;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  background: linear-gradient(135deg, #270f27, #432040);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.footer .brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer .rights {
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* ========== FLOATING BOX ========== */
+.floating-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #cd00d4, #630446);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .first-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
